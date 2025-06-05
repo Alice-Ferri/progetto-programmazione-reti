@@ -2,6 +2,7 @@ import socket
 import os
 import mimetypes
 from datetime import datetime
+from urllib.parse import unquote
 
 HOST, PORT = '127.0.0.1', 8080
 BASE_DIR = './www'
@@ -9,9 +10,18 @@ BASE_DIR = './www'
 def log_request(path, status):
     print(f"[{datetime.now()}] GET {path} - {status}")
 
+def recv_all_headers(client_socket):
+    data = b''
+    while b'\r\n\r\n' not in data:
+        part = client_socket.recv(1024)
+        if not part:
+            break
+        data += part
+    return data.decode('utf-8', errors='ignore')
+
 def handle_client(client_socket):
     try:
-        request_data = client_socket.recv(1024).decode('utf-8', errors='ignore')
+        request_data = recv_all_headers(client_socket)
         if not request_data:
             return
 
@@ -27,13 +37,19 @@ def handle_client(client_socket):
         method, path = parts[0], parts[1]
 
         if method != 'GET':
+            # Metodo non supportato: chiudi subito
             client_socket.close()
             return
+
+        # Decodifica URL (es. %20 => spazio)
+        path = unquote(path)
 
         if path == '/':
             path = '/index.html'
 
-        file_path = os.path.join(BASE_DIR, path.lstrip('/'))
+        # Previeni directory traversal
+        safe_path = os.path.normpath(path).lstrip(os.sep)
+        file_path = os.path.join(BASE_DIR, safe_path)
 
         if os.path.isfile(file_path):
             with open(file_path, 'rb') as f:
