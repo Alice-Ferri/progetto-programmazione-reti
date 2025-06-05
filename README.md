@@ -2,7 +2,7 @@
 
 ## Obiettivo del Progetto
 
-Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di gestire richieste `GET` e servire un sito statico con HTML/CSS. Il sito web realizzato è statico e rappresenta la "**Pizzeria da Michele**" e comprende quattro pagine informative dedicate alla storia, al menù, agli eventi settimanali e ai contatti della pizzeria. Queste sono collegate da un menu di navigazione responsive.
+Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di gestire richieste `GET` e servire un sito statico con HTML/CSS. Il sito web realizzato è statico e rappresenta la "**Pizzeria da Michele**" e comprende cinque pagine informative dedicate alla storia, al menù, agli eventi settimanali e ai contatti della pizzeria. Queste sono collegate da un menu di navigazione responsive.
 
 ## Struttura del Progetto
 
@@ -12,6 +12,7 @@ Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di ge
   * `index.html`: home page con la storia della pizzeria.
   * `menu.html`: lista delle pizze con immagini.
   * `eventi.html`: pagina con eventi.
+  * `recensioni.html`: recensioni degli utenti.
   * `contatti.html`: contatti e informazioni.
   * `style.css`: stile condiviso.
   * `img/`: cartella immagini.
@@ -26,6 +27,9 @@ Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di ge
 
 - **eventi.html** – _Eventi settimanali_  
   Presenta le iniziative settimanali come karaoke, musica dal vivo, quiz a premi, offerte “all you can eat”, compleanni.
+
+  - **recensioni.html** – _Recensioni degli utenti_  
+  Presenta alcune delle testimonianze degli utenti.
 
 - **contatti.html** – _Contatti e servizi_  
   Include indirizzo con link a maps, numero di telefono con link click-to-call, e informazioni sulle consegne a domicilio.
@@ -44,7 +48,7 @@ Il server si avvia su `localhost` alla porta `8080` e gestisce richieste HTTP `G
 * Gestione richieste HTTP `GET`
 * Risposta 200 OK
 * Risposta 404 Not Found
-* Almeno 3 pagine HTML
+* 5 pagine HTML
 * Layout responsive con menu hamburger
 * Immagini servite correttamente
 * Separazione HTML / CSS
@@ -58,4 +62,4 @@ Il server si avvia su `localhost` alla porta `8080` e gestisce richieste HTTP `G
 ## Conclusioni
 
 Il progetto mostra il funzionamento di un server HTTP realizzato interamente in Python, sfruttando la libreria socket per la gestione delle connessioni.
-È stato inoltre sviluppato un sito web statico completo, con HTML e CSS, ospitato sul server creato, offrendo così una panoramica sulle richieste HTTP.
+È stato sviluppato un sito web statico completo, con HTML e CSS, ospitato sul server creato, offrendo così una panoramica sulle richieste HTTP.

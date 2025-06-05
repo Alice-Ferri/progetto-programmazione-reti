@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzeria Michele - Recensioni</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="eventi.html">Eventi</a>
+    <a href="recensioni.html" class="active">Recensioni</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+
+  <header>
+    <h1>Pizzeria da Michele</h1>
+  </header>
+
+  <section class="history-section">
+    <main>
+        <h2>Le nostre testimonianze</h2>
+        <li class="review">
+            <p class="review-text">"La pizza è semplicemente la migliore che abbia mai assaggiato! Atmosfera accogliente e personale gentilissimo."</p>
+            <p class="review-author">— Maria R.</p>
+        </li>
+        <li class="review">
+            <p class="review-text">"Servizio rapido, prezzi giusti e un menù ricco di pizze classiche e speciali. Tornerò sicuramente e proverò all you can eat!"</p>
+            <p class="review-author">— Luca B.</p>
+        </li>
+        <li class="review">
+            <p class="review-text">"Mi piace l’atmosfera familiare e gli eventi serali. Pizza squisita e serate divententi come karaoke e quiz game."</p>
+            <p class="review-author">— Anna M.</p>
+        </li>
+        <li class="review">
+            <p class="review-text">"Ottima esperienza, consigliatissimo per chi vuole assaporare la vera pizza tradizionale."</p>
+            <p class="review-author">— Giorgio T.</p>
+        </li>
+        <li class="review">
+            <p class="review-text">"La pizza era buonissima e il personale molto gentile. La musica dal vivo che rende l'atmosfera ancora più piacevole e accogliente!"</p>
+            <p class="review-author">— Elena P.</p>
+        </li>
+        <li class="review">
+            <p class="review-text">"Ho festeggiato il mio compleanno con loro e sicuramente ne organizzerò altri: l’accoglienza calorosa e il divertimento con gli invitati hanno reso la serata indimenticabile."</p>
+            <p class="review-author">— Simona A.</p>
+        </li>
+    </main>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
