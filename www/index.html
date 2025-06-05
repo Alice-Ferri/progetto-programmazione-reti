@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pizzeria Michele - Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="eventi.html">Eventi</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+
+  <header>
+    <h1>Pizzeria da Michele</h1>
+  </header>
+
+  <section class="history-section">
+    <main>
+      <h2>La Nostra Storia</h2>
+      <p>
+        Fondata nel 1990, Pizzeria da Michele porta la tradizione autentica della pizza napoletana nel cuore della città di Roma. 
+        Con ingredienti freschi e tanta passione, ogni pizza è preparata come una vera opera d’arte.
+        <br>
+        La Pizzeria da Michele è il punto di incontro tra tradizione e innovazione, esperienza e passione. 
+        <br><br>
+        Visita il nostro sito per scoprire il menù pizze e gli eventi della settimana!
+      </p>
+      <div class="image-row">
+        <img src="img/pizzeria1.jpg" alt="Pizzeria" />
+        <img src="img/pizzeria2.jpg" alt="Pizzeria" />
+      </div>
+    </main>
+  </section>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const nav = document.getElementById('nav');
+
+    hamburger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      hamburger.classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

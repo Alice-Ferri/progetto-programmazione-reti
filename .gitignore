@@ -1,0 +1,18 @@
+# Ignora tutti i file temporanei
+*.tmp
+*.log
+
+# Ignora file di sistema
+.DS_Store
+Thumbs.db
+
+# Ignora la cartella node_modules (tipico di progetti JS)
+node_modules/
+
+# Ignora file di build
+dist/
+build/
+
+# Ignora file personali
+.env
+*.swp

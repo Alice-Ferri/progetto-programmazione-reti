@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Eventi - Pizzeria Michele</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="hamburger" id="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <nav id="nav">
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="eventi.html">Eventi</a>
+    <a href="contatti.html">Contatti</a>
+  </nav>
+
+  <header>
+    <h1>Pizzeria da Michele</h1>
+  </header>
+
+  <main>
+    <h2>Eventi della Settimana</h2>
+    <ul class="event-list">
+      <li>
+        <img src="img/allyoucaneat.jpg" alt="All you can eat pizza" />
+        <strong>Mercoledì:</strong> Pizza all you can eat - A partire da 16€ a persona!
+      </li>
+      <li>
+        <img src="img/quiz.jpg" alt="Karaoke" />
+        <strong>Giovedì:</strong> Quiz a premi dalle 20:30 – Sfida gli altri tavoli e vinci sconti sulle pizze!
+      </li>
+      <li>
+        <img src="img/karaoke.jpg" alt="Karaoke" />
+        <strong>Venerdì:</strong> Karaoke dalle 21:00 alle 23:30 – Vieni a cantare le tue canzoni preferite gustando fantastiche pizze!
+      </li>
+      <li>
+        <img src="img/live.jpg" alt="Live Music" />
+        <strong>Sabato:</strong> Musica dal vivo dalle 20:00 – Goditi la pizza con un accompagnamento musicale dal vivo.
+      </li>
+      <li>
+        <img src="img/compleanno.jpg" alt="Compleanno" />
+        <strong>Festeggia il tuo compleanno con noi!</strong> Prenota ora la nostra sala dedicata e vivi un momento unico con amici e parenti.
+      </li>
+    </ul>
+  </main>
+
+<script>
+  const hamburger = document.getElementById('hamburger');
+  const nav = document.getElementById('nav');
+
+  hamburger.addEventListener('click', () => {
+    nav.classList.toggle('open');
+    hamburger.classList.toggle('open');
+  });
+</script>
+
+</body>
+</html>
