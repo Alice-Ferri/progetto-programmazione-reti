@@ -28,7 +28,7 @@ Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di ge
 - **eventi.html** – _Eventi settimanali_  
   Presenta le iniziative settimanali come karaoke, musica dal vivo, quiz a premi, offerte “all you can eat”, compleanni.
 
-  - **recensioni.html** – _Recensioni degli utenti_  
+- **recensioni.html** – _Recensioni degli utenti_  
   Presenta alcune delle testimonianze degli utenti.
 
 - **contatti.html** – _Contatti e servizi_  
