@@ -368,6 +368,10 @@ section > h3 {
   color: #9d0208;
 }
 
+a.active {
+  font-weight: bold;
+  color: #9d0208;
+}
 
 .contact-main {
   margin-left: 260px;
