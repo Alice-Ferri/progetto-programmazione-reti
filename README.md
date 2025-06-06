@@ -2,7 +2,7 @@
 
 ## Obiettivo del Progetto
 
-Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di gestire richieste `GET` e servire un sito statico con HTML/CSS. Il sito web realizzato rappresenta la "**Pizzeria da Michele**" e comprende cinque pagine informative dedicate alla storia, al menù, agli eventi settimanali e ai contatti della pizzeria. Queste sono collegate da un menu di navigazione responsive, oltre al link dell'header che porta alla home.
+Progettare un server HTTP in Python utilizzando il modulo `socket`, capace di gestire richieste `GET` e servire un sito statico con HTML/CSS. Il sito web realizzato rappresenta la "**Pizzeria da Michele**" e comprende cinque pagine informative dedicate alla storia, al menù, agli eventi settimanali, alle recensioni e ai contatti della pizzeria. Queste sono collegate da un menu di navigazione responsive, oltre al link dell'header che porta alla home.
 
 ## Struttura del Progetto
 
